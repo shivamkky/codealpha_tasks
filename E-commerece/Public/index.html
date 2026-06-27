@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaBuy — Discover premium products with a modern shopping experience. Browse electronics, clothing, accessories, and home goods.">
+  <title>NovaBuy — Premium E-Commerce Store</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          New arrivals just dropped
+        </div>
+        <h1>
+          Discover<br>
+          <span class="gradient-text">Premium Products</span>
+        </h1>
+        <p>Curated collection of the finest electronics, fashion, and home essentials — all in one place.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary btn-lg">Browse Collection</a>
+          <a href="#products" class="btn btn-secondary btn-lg">View Categories</a>
+        </div>
+      </section>
+
+      <!-- Category Filters -->
+      <section id="products">
+        <div class="filters" id="category-filters">
+          <button class="filter-chip active" data-category="all">All Products</button>
+        </div>
+      </section>
+
+      <!-- Products Grid -->
+      <section class="products-section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Products</h2>
+          <span class="product-count" id="product-count"></span>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <!-- Loading skeletons -->
+          <div class="loading-skeleton skeleton-card"></div>
+          <div class="loading-skeleton skeleton-card"></div>
+          <div class="loading-skeleton skeleton-card"></div>
+          <div class="loading-skeleton skeleton-card"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 NovaBuy. All rights reserved. Built with ♥</p>
+    </footer>
+  </div>
+
+  <!-- Toast container -->
+  <div id="toast-container"></div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
